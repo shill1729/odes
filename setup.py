@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='odes',
-    version='1.0',
+    version='2.0',
     packages=['odes'],
     url='https://github.com/shill1729/odespy',
     license='MIT',
