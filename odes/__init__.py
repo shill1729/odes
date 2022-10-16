@@ -29,7 +29,7 @@ def rk4(f, x0, tn, n=1000, t0=0.0):
     space (r,v) where
     r'(t) = v
     v'(t) = h(t)- a v(t)-b r(t)
-    with initial conditions x(0)=(r(0), v(0))^T
+    with initial conditions x(0)=(r(0), v(0))^T.
 
     Parameters:
         f: the RHS of the ODE, must be a function of (t,x) and be R^d-valued
