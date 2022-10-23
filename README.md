@@ -15,4 +15,14 @@ $$x_{t+h}=x_t+hF(t,x_t).$$
 ## rk4
 The RK4 scheme is even better, but more complicated to write out.
 
+## Gradient descent
+Also implemented is gradient descent with inexact line search.
+Here we maximize the function $f: \mathbb{R}^d \to \mathbb{R}$ by the
+iterative scheme
+$$x_i = x_{i-1} -\eta_i \nabla f(x_{i=1}),$$
+where the step-size $\eta_i$ (called the learning-rate in machine learning circles)
+is chosen via teh inexact line search criterion:
+pick $\eta_i$ such that
+$$f(x_i) \leq f(x_{i-1}) -\alpha \eta_i \|\nabla f(x_{i-1})\|^2.$$
+
 
