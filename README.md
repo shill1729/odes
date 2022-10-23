@@ -23,6 +23,7 @@ $$x_i = x_{i-1} -\eta_i \nabla f(x_{i=1}),$$
 where the step-size $\eta_i$ (called the learning-rate in machine learning circles)
 is chosen via teh inexact line search criterion:
 pick $\eta_i$ such that
-$$f(x_i) \leq f(x_{i-1}) -\alpha \eta_i \|\nabla f(x_{i-1})\|^2.$$
+$$f(x_i) \leq f(x_{i-1}) -\alpha \eta_i \|\nabla f(x_{i-1})\|^2,$$
+where $\|\cdot \|$ is the Euclidean norm.
 
 
